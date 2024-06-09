@@ -1,0 +1,10 @@
+# 48 - Leia um valor inteiro em segundos, e imprima-o em horas, minutos e segundos.
+
+segundos = int(input('Informe a quantidade de segundos: '))
+
+horas = segundos // 3600
+segundos_restantes = segundos % 3600
+minutos = segundos_restantes // 60
+segundos_restantes = segundos_restantes % 60
+
+print('{:02d}:{:02d}:{:02d}'.format(horas, minutos, segundos_restantes))
